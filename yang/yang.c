@@ -352,7 +352,7 @@ static void move_to_left()
     }
 }
 
-static char find_same_card(char img_index)
+static int find_same_card(uint8_t img_index)
 {
     int i;
 

@@ -71,6 +71,10 @@ idf_component_register(
     REQUIRES lvgl
 )
 
+target_compile_definitions(${COMPONENT_LIB} PRIVATE
+    LV_LVGL_H_INCLUDE_SIMPLE
+)
+
 target_compile_options(${COMPONENT_LIB} PRIVATE
     -Wno-error=char-subscripts
     -Wno-error=unused-variable
