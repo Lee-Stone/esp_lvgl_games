@@ -1,7 +1,7 @@
 idf_component_register(
     SRCS
         "lv_100ask_2048/lv_100ask_2048.c"
-        "lv_100ask_2048/game2048.cpp"
+        "lv_100ask_2048/game2048.c"
         "yang/yang.c"
         "yang/bottom_dock_img.c"
         "yang/grass1_img.c"
