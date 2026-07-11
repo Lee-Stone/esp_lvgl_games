@@ -80,4 +80,5 @@ target_compile_options(${COMPONENT_LIB} PRIVATE
     -Wno-error=unused-variable
     -Wno-error=unused-function
     -Wno-error=missing-braces
+    -Wno-error=incompatible-pointer-types
 )
