@@ -130,7 +130,7 @@ void xiaoxiaole(lv_obj_t *obj)
     lv_obj_set_width(score_lable, 40);
     lv_obj_set_height(score_lable, 30);
     lv_label_set_long_mode(score_lable,LV_LABEL_LONG_SCROLL_CIRCULAR);
-    lv_obj_set_style_text_font(score_lable, &lv_font_montserrat_18, 0);
+    lv_obj_set_style_text_font(score_lable, &lv_font_montserrat_14, 0);
     lv_obj_set_style_text_align(score_lable, LV_TEXT_ALIGN_RIGHT, 0);
     lv_obj_align_to(score_lable, coin, LV_ALIGN_OUT_BOTTOM_MID, -3, -12);
     lv_obj_set_style_text_color(score_lable, lv_color_hex(0x00695C), LV_PART_MAIN);
