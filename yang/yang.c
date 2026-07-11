@@ -60,7 +60,7 @@ typedef struct {
     char y;
     area_enum area;
     char layer;
-    char img_index;
+    uint8_t img_index;
 
 } card_typedef;
 
@@ -93,7 +93,7 @@ static void clicked_cb(lv_event_t *e);
 static void left_cover_test();
 static void right_cover_test();
 static void move_to_right(char index);
-static char find_same_card(char img_index);
+static int find_same_card(uint8_t img_index);
 static void del_same_card();
 static void x_move_cb(void *var, int32_t v);
 static void y_move_cb(void *var, int32_t v);
@@ -209,7 +209,7 @@ static void game_start(lv_event_t *e)
 
 static void clicked_cb(lv_event_t *e)
 {
-    int i, j, k, m;
+    int i, j, k = 0, m;
     card_typedef *card = (card_typedef *)lv_obj_get_user_data(e->current_target);
     card->alive = false;
 
@@ -354,7 +354,7 @@ static void move_to_left()
 
 static char find_same_card(char img_index)
 {
-    int i, j, k;
+    int i;
 
     for (i = 5; i >= 0; i--) {
         if (bottom_card[i].alive && bottom_card[i].img_index == img_index) {
