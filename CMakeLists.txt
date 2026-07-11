@@ -68,7 +68,7 @@ idf_component_register(
         "yang"
         "xiaoxiaole"
         "pvz"
-    REQUIRES lvgl
+    REQUIRES lvgl__lvgl
 )
 
 target_compile_definitions(${COMPONENT_LIB} PRIVATE
