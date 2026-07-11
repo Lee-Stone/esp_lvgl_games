@@ -70,3 +70,9 @@ idf_component_register(
         "pvz"
     REQUIRES lvgl
 )
+
+target_compile_options(${COMPONENT_LIB} PRIVATE
+    -Wno-error=char-subscripts
+    -Wno-error=unused-variable
+    -Wno-error=missing-braces
+)
