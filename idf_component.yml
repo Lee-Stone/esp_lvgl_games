@@ -1,2 +1,7 @@
+version: "1.0.0"
+description: "LVGL game collection (2048, Yang, Xiaoxiaole, Plants vs Zombies) for ESP32"
+url: "https://github.com/Lee-Stone/esp_lvgl_games"
 dependencies:
   lvgl/lvgl: ^8.3.11
+  idf:
+    version: ">=4.1.0"
