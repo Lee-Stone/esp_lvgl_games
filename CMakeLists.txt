@@ -74,5 +74,6 @@ idf_component_register(
 target_compile_options(${COMPONENT_LIB} PRIVATE
     -Wno-error=char-subscripts
     -Wno-error=unused-variable
+    -Wno-error=unused-function
     -Wno-error=missing-braces
 )
